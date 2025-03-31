@@ -1,61 +1,72 @@
-PromptCleaner
-Version: 1.0.0
-Date: 2025-03-31
+# 🧼 PromptCleaner
 
-🧼 What is PromptCleaner?
-PromptCleaner is a lightweight GUI tool designed for prompt creators working with AI image generators. It helps clean up messy or overloaded prompts – especially when they include many weightings like (term:1.4) or nested parentheses.
+**Version:** 1.0.0  
+**Date:** 2025-03-31
 
-The tool automatically removes all parentheses and numeric weighting data, resetting the prompt to a neutral, simplified form.
+---
 
-🧩 Key Features
-Removes all round brackets ( )
+## 🧾 Description
 
-Removes numbers, colons and dots in front of closing brackets, e.g., :1.2)
+**PromptCleaner** is a lightweight GUI tool for cleaning up overloaded prompts used in AI image generation – especially when those prompts include excessive **weightings** like `(term:1.2)` or nested parentheses.
 
-Supports clipboard integration (copy, clean, recopy)
+The tool helps reset a prompt to a clean and neutral state by:
 
-"Always on Top" toggle for easier multitasking
+- Removing all parentheses `(` `)`
+- Removing numbers, dots and colons associated with weightings (e.g., `:1.2`, `1.0)`)
+- Simplifying complex or hard-to-read prompt structures
 
-Transparency slider for adjustable window opacity
+Ideal for creators who want to quickly simplify prompts before using them in a generator.
 
-Drag & drop window repositioning
+---
 
-Discreet version display at the bottom
+## ✅ Supported AI Generators
 
-🎯 Who is it for?
-PromptCleaner is perfect for creators who lose track of their prompts due to too many weightings, nested parentheses, or cluttered structures.
+PromptCleaner is compatible with any system that uses parentheses and weighting in prompts, including:
 
-✅ Compatible AI Image Generators
-Designed for AI systems that interpret parentheses and prompt weightings, such as:
+- **Stable Diffusion** (Automatic1111, ComfyUI)
+- **InvokeAI**
+- **Mage.space**
+- **NightCafe**
+- **Playground AI**
+- **Leonardo AI**
+- **RunDiffusion**
+- **Dreamlike.art**
+- ...and others that support `(term:1.2)` syntax
 
-Stable Diffusion (via WebUIs like Automatic1111 or ComfyUI)
+---
 
-InvokeAI
+## 🔧 Installation and Execution
 
-Mage.space
+1. Make sure Python 3.10 or later is installed: https://www.python.org  
+2. Download this repository or clone it using Git.  
+3. Open a terminal (e.g., PowerShell) inside the `PromptCleaner` folder.  
+4. Install the required packages:
 
-NightCafe
+   ```bash
+   pip install -r requirements.txt
 
-Playground AI
+Start the application:
 
-Leonardo AI
+   ```bash
+python PromptCleaner.py
 
-RunDiffusion
+🖥️ Features
+Removes all round parentheses from prompts
 
-Dreamlike.art
+Cleans weightings like :1.0 or 1.2) from prompt text
 
-...and any generator that understands (term:1.2)-style syntax
+Clipboard integration: cleans text directly from clipboard
 
-🛠 How to use
-Copy your prompt into the clipboard.
+"Always on Top" toggle
 
-Start PromptCleaner.
+Adjustable window transparency via slider
 
-Click the "Remove Characters" button.
+Draggable GUI window
 
-The cleaned prompt is automatically copied back to the clipboard.
-
-Paste it wherever you need.
+Minimal and user-friendly design
 
 📄 License
-This project is licensed under CC BY-NC 4.0. See LICENSE.md for details.
+This project is licensed under the
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
+See the file LICENSE.md for full details.
+
