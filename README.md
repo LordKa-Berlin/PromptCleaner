@@ -15,6 +15,13 @@ The tool helps reset a prompt to a clean and neutral state by:
 - Removing numbers, dots and colons associated with weightings (e.g., `:1.2`, `1.0)`)
 - Simplifying complex or hard-to-read prompt structures
 
+## 🖼️ Preview
+
+Here’s a preview of the PromptCleaner GUI:
+
+![PromptCleaner Screenshot](screenshot.png)
+
+
 Ideal for creators who want to quickly simplify prompts before using them in a generator.
 
 ---
